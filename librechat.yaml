@@ -1,32 +1,31 @@
 version: "1.2.8"
 cache: true
-
 endpoints:
   custom:
-    - name: OpenRouter
+    - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
-          - gpt-3.5-turbo
+          - "gpt-3.5-turbo"
         fetch: true
       titleConvo: true
-      titleModel: current_model
+      titleModel: "current_model"
       summarize: false
-      summaryModel: current_model
+      summaryModel: "current_model"
       forcePrompt: false
-      modelDisplayLabel: OpenRouter
+      modelDisplayLabel: "OpenRouter"
 
-    - name: Ollama
-      apiKey: "ollama"
-      baseURL: "http://host.docker.internal:11434/v1"
+    - name: "Ollama"
+      apiKey: "${OLLAMA_KEY}"
+      baseURL: "http://host.docker.internal:11434/v1/"
       models:
         default:
-          - llama3:latest
+          - "llama3:latest"
         fetch: true
       titleConvo: true
-      titleModel: current_model
+      titleModel: "current_model"
       summarize: false
-      summaryModel: current_model
+      summaryModel: "current_model"
       forcePrompt: false
-      modelDisplayLabel: Ollama
+      modelDisplayLabel: "Ollama"
