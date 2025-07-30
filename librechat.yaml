@@ -1,4 +1,5 @@
 version: "v1"
+
 endpoints:
   custom:
     - name: "OpenRouter"
@@ -29,8 +30,7 @@ endpoints:
 
 registration:
   socialLogins:
-    - "google"
-    # Add others below if needed:
-    # - "github"
-    # - "discord"
-    # - "openid"
+    - google
+
+interface:
+  showSocialLogins: true
